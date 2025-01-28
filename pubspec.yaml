@@ -38,6 +38,7 @@ dependencies:
   data_connection_checker_tv: ^0.3.5-nullsafety
   dio: ^5.7.0
   shared_preferences: ^2.4.0
+  dartz: ^0.10.1
 
 dev_dependencies:
   flutter_test:
