@@ -1,4 +1,5 @@
 import 'package:clean_architecture/core/databases/api/end_points.dart';
+import 'package:clean_architecture/features/users/data/models/sub_models/geo_model.dart';
 import 'package:clean_architecture/features/users/domain/entities/sub_entities/address_entity.dart';
 
 class AddressModel extends AddressEntity {
@@ -16,7 +17,7 @@ class AddressModel extends AddressEntity {
       suite: json[ApiKey.suite],
       city: json[ApiKey.city],
       zipcode: json[ApiKey.zipcode],
-      geo: json[ApiKey.geo],
+      geo: GeoModel.fromJson(json[ApiKey.geo]),
     );
   }
   Map<String, dynamic> toJson() {

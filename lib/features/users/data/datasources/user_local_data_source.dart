@@ -22,7 +22,7 @@ class UserLocalDataSource {
     }
   }
 
-  Future<UserModel> getCachedUser() async {
+  Future<UserModel> getCachedUser() {
     final cachedData = cacheHelper.getDataString(key: key);
 
     if (cachedData != null) {
